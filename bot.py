@@ -44,7 +44,7 @@ def send_witch_fact():
 
 if __name__ == '__main__':
     scheduler = BlockingScheduler(timezone=pytz.timezone('Europe/Moscow'))
-    scheduler.add_job(send_witch_fact, 'cron', hour=14, minute=45)  # каждый день в 10:00
+    scheduler.add_job(send_witch_fact, 'cron', hour=15, minute=20)  # каждый день в 10:00
     logging.info("🧙‍♀️ Бот запущен. Факты о ведьмах — ежедневно в 10:00 по Москве.")
 
     try:
